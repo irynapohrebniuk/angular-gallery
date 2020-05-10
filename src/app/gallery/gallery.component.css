@@ -18,6 +18,11 @@
     background-color: red;
 }
 
+li img {
+    width: 100%;
+    height: auto;
+}
+
 .hide {
     display: none;
 }
@@ -27,13 +32,15 @@
     overflow: hidden;
     display: inline-block;
     width: 150px;
-    height: 150px;
     margin: 10px;
-    background-color: yellow;
+    
     cursor: pointer;
     
 }
 
+.active {
+    background-color: yellow;
+}
 
 .gallery span {
     position: absolute;

@@ -1,7 +1,7 @@
 .gallery {
     display: block;
     width: 600px;
-    height: 600px;
+   
     margin: 0 auto;
     border: 2px solid gray;
     position: relative;
@@ -44,7 +44,7 @@ li img {
 
 .gallery span {
     position: absolute;
-    bottom: 70px;
+    bottom: 65px;
     font-size: 30px;
     font-weight: bold;
     color: #fff;

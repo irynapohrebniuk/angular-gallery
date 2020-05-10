@@ -1,0 +1,58 @@
+.gallery {
+    display: block;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid gray;
+    position: relative;
+}
+
+.content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    background-color: red;
+}
+
+
+.img-thumb {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: yellow;
+    cursor: pointer;
+    
+}
+
+
+.gallery span {
+    position: absolute;
+    bottom: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.gallery span.prev {
+    left: 0px;
+}
+
+.gallery span.next {
+    right: 0px;
+}
+
+.gallery span:hover {
+    cursor: pointer;
+}

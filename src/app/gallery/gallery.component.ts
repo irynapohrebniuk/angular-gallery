@@ -35,6 +35,7 @@ export class GalleryComponent {
     
   }
   handleNext() {
+    
     if (this.currentIndex < this.pictures.length -1 ) {
       this.currentIndex = this.currentIndex + 1;
     }

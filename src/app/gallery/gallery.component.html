@@ -1,24 +1,21 @@
-<div class='gallery'>
-    <div class='content-img'>
-        <img class="img" [src]='pictures[currentIndex]' />
-        <span (click)="handlePrev()" class="prev" *ngIf = "currentIndex!== 0" >
-            <img  src='../../assets/multimedia-option.png' />
+<div class="gallery">
+    <div class='container'>
+        <img class='img-lg' [src]='pictures[currentIndex]' />
+        <span (click)="handlePrev()" class="prev" *ngIf="currentIndex!== 0">
+            <img src='../../assets/multimedia-option.png' />
         </span>
-        <span (click)="handleNext()" class="next" *ngIf = "currentIndex !== pictures.length-1">
+        <span (click)="handleNext()" class="next" *ngIf="currentIndex !== pictures.length-1">
             <img src='../../assets/basic-app.png' />
         </span>
     </div>
-    <div>
-        <ul class="container-img">
-            <li *ngFor="let picture of pictures; let i = index"
-                [class.active]="currentIndex === i" 
-                class='img-thumb'>
-                    <img 
-                        (click) = "handleClick(i)" 
-                        class="img" [src]="picture" />
-            </li>
-            
-        </ul>
+    <div class="scroll">
+        
+        <div class="pictures">
+            <div [class.active]="currentIndex === i"
+                class="picture" 
+                *ngFor="let picture of pictures; let i = index">
+                    <img (click)="handleClick(i)" [src]="picture" />
+            </div>
+        </div>
     </div>
 </div>
-

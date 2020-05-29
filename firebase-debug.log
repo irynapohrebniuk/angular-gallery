@@ -1,0 +1,151 @@
+[debug] [2020-05-29T21:43:47.567Z] ----------------------------------------------------------------------
+[debug] [2020-05-29T21:43:47.569Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-05-29T21:43:47.569Z] CLI Version:   8.4.0
+[debug] [2020-05-29T21:43:47.569Z] Platform:      win32
+[debug] [2020-05-29T21:43:47.569Z] Node Version:  v12.16.3
+[debug] [2020-05-29T21:43:47.570Z] Time:          Fri May 29 2020 23:43:47 GMT+0200 (GMT+02:00)
+[debug] [2020-05-29T21:43:47.570Z] ----------------------------------------------------------------------
+[debug] [2020-05-29T21:43:47.570Z] 
+[debug] [2020-05-29T21:43:47.576Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-29T21:43:47.577Z] > authorizing via signed-in user
+[debug] [2020-05-29T21:43:47.577Z] [iam] checking project photo-gallery-31bfa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-05-29T21:43:47.580Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/photo-gallery-31bfa:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-05-29T21:43:48.398Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:43:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=705","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-29T21:43:48.405Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/photo-gallery-31bfa  
+ 
+[debug] [2020-05-29T21:43:48.645Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:43:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'photo-gallery-31bfa'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-05-29T21:43:48.650Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/photo-gallery-31bfa/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-05-29T21:43:51.148Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:43:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[photo-gallery-31bfa]: beginning deploy... 
+[info] i  hosting[photo-gallery-31bfa]: found 37 files in dist 
+[debug] [2020-05-29T21:43:51.168Z] [hosting] hash cache [ZGlzdA] not populated
+[debug] [2020-05-29T21:43:51.795Z] [hosting] hash cache [ZGlzdA] stored for 37 files
+[debug] [2020-05-29T21:43:51.795Z] [hosting][hash queue][FINAL] {"max":602,"min":34,"avg":174.45945945945945,"active":0,"complete":37,"success":37,"errored":0,"retried":0,"total":37,"elapsed":626}
+[debug] [2020-05-29T21:43:51.796Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/projects/301786517262/sites/photo-gallery-31bfa/versions/7b01f7ec26da663e:populateFiles  
+ <request body omitted>
+[debug] [2020-05-29T21:43:52.947Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:43:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-29T21:43:52.968Z] [hosting][populate queue][FINAL] {"max":1167,"min":1167,"avg":1167,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1184}
+[debug] [2020-05-29T21:43:52.968Z] [hosting] uploads queued: 37
+[debug] [2020-05-29T21:43:57.152Z] [hosting][upload queue][FINAL] {"max":4202,"min":1716,"avg":2784.2162162162163,"active":0,"complete":37,"success":37,"errored":0,"retried":0,"total":37,"elapsed":4203}
+[info] +  hosting[photo-gallery-31bfa]: file upload complete 
+[debug] [2020-05-29T21:43:57.155Z] [hosting] deploy completed after 6005ms
+[debug] [2020-05-29T21:43:57.156Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "photo-gallery-31bfa"
+    },
+    "site": "photo-gallery-31bfa",
+    "version": "projects/301786517262/sites/photo-gallery-31bfa/versions/7b01f7ec26da663e"
+  }
+]
+[info] i  hosting[photo-gallery-31bfa]: finalizing version... 
+[debug] [2020-05-29T21:43:57.159Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/projects/301786517262/sites/photo-gallery-31bfa/versions/7b01f7ec26da663e?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-05-29T21:43:58.258Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:43:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-29T21:43:58.260Z] [hosting] finalized version for photo-gallery-31bfa: {"name":"projects/301786517262/sites/photo-gallery-31bfa/versions/7b01f7ec26da663e","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-05-29T21:43:48.929239Z","createUser":{"email":"iryna.pohrebniuk@gmail.com"},"finalizeTime":"2020-05-29T21:43:57.326378Z","finalizeUser":{"email":"iryna.pohrebniuk@gmail.com"}}
+[info] +  hosting[photo-gallery-31bfa]: version finalized 
+[info] i  hosting[photo-gallery-31bfa]: releasing new version... 
+[debug] [2020-05-29T21:43:58.262Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/photo-gallery-31bfa/releases?version_name=projects/301786517262/sites/photo-gallery-31bfa/versions/7b01f7ec26da663e  
+ {"message":null}
+[debug] [2020-05-29T21:44:08.349Z] Error: socket hang up
+    at connResetException (internal/errors.js:608:14)
+    at TLSSocket.socketOnEnd (_http_client.js:453:23)
+    at TLSSocket.emit (events.js:322:22)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Server Error. socket hang up
+[debug] [2020-05-29T21:44:49.111Z] ----------------------------------------------------------------------
+[debug] [2020-05-29T21:44:49.113Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-05-29T21:44:49.113Z] CLI Version:   8.4.0
+[debug] [2020-05-29T21:44:49.113Z] Platform:      win32
+[debug] [2020-05-29T21:44:49.113Z] Node Version:  v12.16.3
+[debug] [2020-05-29T21:44:49.114Z] Time:          Fri May 29 2020 23:44:49 GMT+0200 (GMT+02:00)
+[debug] [2020-05-29T21:44:49.114Z] ----------------------------------------------------------------------
+[debug] [2020-05-29T21:44:49.114Z] 
+[debug] [2020-05-29T21:44:49.120Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-29T21:44:49.121Z] > authorizing via signed-in user
+[debug] [2020-05-29T21:44:49.121Z] [iam] checking project photo-gallery-31bfa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-05-29T21:44:49.124Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/photo-gallery-31bfa:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-05-29T21:44:49.931Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:44:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=724","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-29T21:44:49.933Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/photo-gallery-31bfa  
+ 
+[debug] [2020-05-29T21:44:50.184Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:44:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'photo-gallery-31bfa'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-05-29T21:44:50.195Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/photo-gallery-31bfa/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-05-29T21:44:51.519Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:44:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[photo-gallery-31bfa]: beginning deploy... 
+[info] i  hosting[photo-gallery-31bfa]: found 37 files in dist 
+[debug] [2020-05-29T21:44:51.551Z] [hosting] hash cache [ZGlzdA] stored for 37 files
+[debug] [2020-05-29T21:44:51.551Z] [hosting][hash queue][FINAL] {"max":3,"min":0,"avg":0,"active":0,"complete":37,"success":37,"errored":0,"retried":0,"total":37,"elapsed":12}
+[debug] [2020-05-29T21:44:51.552Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/projects/301786517262/sites/photo-gallery-31bfa/versions/da26c0806416afa0:populateFiles  
+ <request body omitted>
+[debug] [2020-05-29T21:44:52.739Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:44:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-29T21:44:52.740Z] [hosting][populate queue][FINAL] {"max":1196,"min":1196,"avg":1196,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1196}
+[debug] [2020-05-29T21:44:52.740Z] [hosting] uploads queued: 0
+[debug] [2020-05-29T21:44:52.740Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1590788692740}
+[info] +  hosting[photo-gallery-31bfa]: file upload complete 
+[debug] [2020-05-29T21:44:52.741Z] [hosting] deploy completed after 1218ms
+[debug] [2020-05-29T21:44:52.741Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "photo-gallery-31bfa"
+    },
+    "site": "photo-gallery-31bfa",
+    "version": "projects/301786517262/sites/photo-gallery-31bfa/versions/da26c0806416afa0"
+  }
+]
+[info] i  hosting[photo-gallery-31bfa]: finalizing version... 
+[debug] [2020-05-29T21:44:52.742Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/projects/301786517262/sites/photo-gallery-31bfa/versions/da26c0806416afa0?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-05-29T21:44:53.766Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 May 2020 21:44:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-29T21:44:53.766Z] [hosting] finalized version for photo-gallery-31bfa: {"name":"projects/301786517262/sites/photo-gallery-31bfa/versions/da26c0806416afa0","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-05-29T21:44:50.260874Z","createUser":{"email":"iryna.pohrebniuk@gmail.com"},"finalizeTime":"2020-05-29T21:44:52.849950Z","finalizeUser":{"email":"iryna.pohrebniuk@gmail.com"}}
+[info] +  hosting[photo-gallery-31bfa]: version finalized 
+[info] i  hosting[photo-gallery-31bfa]: releasing new version... 
+[debug] [2020-05-29T21:44:53.768Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/photo-gallery-31bfa/releases?version_name=projects/301786517262/sites/photo-gallery-31bfa/versions/da26c0806416afa0  
+ {"message":null}
+[debug] [2020-05-29T21:45:03.820Z] Error: socket hang up
+    at connResetException (internal/errors.js:608:14)
+    at TLSSocket.socketOnEnd (_http_client.js:453:23)
+    at TLSSocket.emit (events.js:322:22)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Server Error. socket hang up
